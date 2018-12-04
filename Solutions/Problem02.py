@@ -1,17 +1,15 @@
-import os
-import bisect
+from FileToRun import getContents
 
 # ------Input----- #
 answer1 = 0
 answer2 = 0
+contents = getContents(2, True)
 
-dirname = os.path.dirname('..\\Input\\')
-contents1 = open(os.path.join(dirname, 'Input02_1.txt'), 'r').read()
+boxIDs = contents.split("\n")
 
 # ------Part 1------ #
 letter2 = 0
 letter3 = 0
-boxIDs = contents1.split("\n")
 for box in boxIDs:
     letterFreqs = {}
     for char in box:

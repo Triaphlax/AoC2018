@@ -1,14 +1,13 @@
-import os
+from FileToRun import getContents
 
 # ------Input----- #
 answer1 = 0
 answer2 = 0
+contents = getContents(1, True)
 
-dirname = os.path.dirname('..\\Input\\')
-contents1 = open(os.path.join(dirname, 'Input01_1.txt'), 'r').read()
+frequencies = list(map(int, contents.split("\n")))
 
 # ------Part 1------ #
-frequencies = list(map(int, contents1.split("\n")))
 answer1 = sum(frequencies)
 
 # ------Part 2------ #
