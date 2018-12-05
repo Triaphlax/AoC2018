@@ -1,0 +1,18 @@
+from FileToRun import getContents
+
+
+# ------Classes------ #
+
+
+# ------Input------ #
+answer1 = 0
+answer2 = 0
+contents = getContents(#, True)
+
+# ------Part 1------ #
+
+# ------Part 2------ #
+
+# ------Output------ #
+print("Answer 1: " + str(answer1))
+print("Answer 2: " + str(answer2))
