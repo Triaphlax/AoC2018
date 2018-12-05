@@ -1,6 +1,6 @@
-from FileToRun import getContents
+from GetFile import getContents
 
-# ------Input----- #
+# ------Input------ #
 answer1 = 0
 answer2 = 0
 contents = getContents(2, True)
@@ -58,6 +58,6 @@ for i in range(0, len(boxIDs)):
     if answer2 != "":
         break
 
-# ------Output----- #
+# ------Output------ #
 print("Answer 1: " + str(answer1))
 print("Answer 2: " + str(answer2))

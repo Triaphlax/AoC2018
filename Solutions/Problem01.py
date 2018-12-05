@@ -1,6 +1,6 @@
-from FileToRun import getContents
+from GetFile import getContents
 
-# ------Input----- #
+# ------Input------ #
 answer1 = 0
 answer2 = 0
 contents = getContents(1, True)
@@ -24,6 +24,6 @@ while not repeatFound:
         else:
             seenFrequencies.append(currentFrequency)
 
-# ------Output----- #
+# ------Output------ #
 print("Answer 1: " + str(answer1))
 print("Answer 2: " + str(answer2))
