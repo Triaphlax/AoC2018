@@ -167,8 +167,6 @@ sl = sweepLine()
 previousX = 0
 intersectionArea = 0
 for i, xl in enumerate(xLines):
-    if sl.heightCovered * (xl.x - previousX) < 0:
-        xasaad =3
     intersectionArea += sl.heightCovered * (xl.x - previousX)
     currRectangle = rectangleDictionary[xl.rectID]
     yRange = (currRectangle.y, currRectangle.y + currRectangle.height)

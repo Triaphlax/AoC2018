@@ -1,4 +1,4 @@
-from FileToRun import getContents
+from GetFile import getContents
 
 
 # ------Classes------ #
