@@ -43,6 +43,14 @@ def find_gt(a, x):
     raise ValueError
 
 
+def find_gt_index(a, x):
+    'Find the index of theleftmost value greater than x'
+    i = bisect.bisect_right(a, x)
+    if i != len(a):
+        return i
+    raise ValueError
+
+
 def find_ge(a, x):
     'Find leftmost item greater than or equal to x'
     i = bisect.bisect_left(a, x)
