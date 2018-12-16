@@ -3,8 +3,8 @@ from SortedSearch import find_gt_index
 
 # ------Classes------ #
 NO_ALLEGIANCE = '.'
-EQUAL_ALLEGIANCE = '*' \
-                   ''
+EQUAL_ALLEGIANCE = '*'
+
 class Grid:
     def __init__(self, x, y, width, height):
         self.x = x - 1  # Make grid one size bigger
